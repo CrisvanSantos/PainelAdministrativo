@@ -1,0 +1,150 @@
+.card-prodts-mv {
+    box-shadow: none !important;
+    background: #ffffff !important;
+}
+
+.scroll-spy {
+    position: relative;
+    overflow: auto;
+    height: 398px;
+}
+
+.text-pr {
+    font-size: smaller;
+    text-align: left;
+    color: rgb(199, 199, 199);
+}
+
+.preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco > p:nth-child(2n+1) {
+    color: #464646;
+}
+
+.preco > p:nth-child(2n+2) {
+    background: #FE6802;
+    color: #ffffff;
+    text-transform: lowercase;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.tx-g {
+    color: lightgray;
+}
+
+.ed-i , .quant {
+    color: #F11B62;
+}
+
+.ed-i {
+    cursor: pointer;
+}
+
+.btn-pr {
+    padding: 5px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    box-shadow: none !important;
+    text-transform: lowercase !important;
+    background: #F11B62;
+    color: #ffffff !important;
+}
+
+.prd-card-1 {
+    background: linear-gradient(45deg,#1AE5D9,#5A7EE9);
+}
+
+.prd-card-2 {
+    background: linear-gradient(45deg,#F5509F,#FE7474);
+}
+
+.prd-card-3 {
+    background: linear-gradient(45deg,#41E494,#39B2B5);
+}
+
+.cards-produtos {
+    height: 150px !important;
+    color: #333333;
+}
+
+b {
+    color: #ff0062;
+}
+
+.img-card-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+/* ................ inputs styles ............... */
+
+.cs-box {
+    /* background: saddlebrown; */
+    width: 100%;
+    height: 35px;
+    /* overflow: hidden; */
+}
+
+.cs-box > .cs-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all .4s ease-in-out;
+}
+
+.cs-box > label {
+    transition: all .4s ease-in-out;
+    position: relative;
+    left: 11px; /* antes da focagem left = 11px after 14px */
+    top: -29px; /* antes da focagem top = -29px after -49px */
+    font-size: 15px; /* antes da focagem font-size = 15px after 13px*/
+    padding-left: 5px;
+    padding-right: 5px;
+    background: transparent;
+    color: #ffffff; /* antes da focagem color = var(--cinsa)  after #f11b26 */
+    cursor: text;
+}
+
+.cs-box > .cs-input:focus,.cs-box > .cs-input:valid {
+    border: 1px solid #F11B62;
+    border-radius: 5px;
+}
+
+.cs-box > .cs-input:focus ~ label,.cs-box > .cs-input:valid ~ label {
+    position: relative;
+    left: 14px; /* antes da focagem left = 11px after 14px */
+    top: -45px; /* antes da focagem top = -29px after -49px */
+    font-size: 13px; /* antes da focagem font-size = 15px after 13px*/
+    background: #F11B62;
+    border-radius: 40px;
+    color: #ffffff; /* antes da focagem color = var(--cinsa)  after #f11b26 */
+}
+
+/* ................... fim styles input .....................*/
+
+.cs-btn {
+    width: 100% !important;
+    height: 35px;
+    border: none !important;
+    background: #F11B62;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    font-size: 11px !important;
+}

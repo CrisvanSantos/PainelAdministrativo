@@ -1,0 +1,227 @@
+:root {
+    --bg-gradient: linear-gradient(55deg,#F11B62,#FE6802);
+    --white: #fff;
+    --shadow-box: 4px 5px 10px rgba(0, 0, 0, 0.397);
+    --darck : #a10036;
+    --cinsa : #ddd;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'roboto',Arial, Helvetica, sans-serif !important;
+}
+
+/* ......................... styles loading ................... */
+
+.loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #09111F;
+    /* transition: all 1s ease-out; */
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loading > img {
+    width: 600px;
+    /* transition: all .4s ease-out; */
+    opacity: 1;
+}
+
+/* ......................... fim style loadding ............... */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 700px;
+    height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-box);
+}
+
+#form_cadastro {
+    width: 700px;
+    height: 460px;
+    /* background: var(--white); */
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+#form_cadastro > .left-part {
+    width: 250px;
+    height: 100%;
+    background: var(--darck);
+    float: left;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#form_cadastro > .right-part {
+    width: 450px;
+    height: 100%;
+    background: var(--white);
+    float: right;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#form_login {
+    position: relative;
+    top: -460px;
+    left: 625px; /* 625px || 125px */
+    width: 450px;
+    height: 460px;
+    transition: all .4s ease-in-out;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ................ inputs styles ............... */
+
+.login-box {
+    /* background: saddlebrown; */
+    width: 250px;
+    height: 35px;
+    /* overflow: hidden; */
+}
+
+.login-box > .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    background: transparent;
+    border: 1.5px solid #b4b4b4;
+    outline: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all .4s ease-in-out;
+}
+
+.login-box > label {
+    transition: all .4s ease-in-out;
+    position: relative;
+    left: 11px; /* antes da focagem left = 11px after 14px */
+    top: -29px; /* antes da focagem top = -29px after -49px */
+    font-size: 15px; /* antes da focagem font-size = 15px after 13px*/
+    padding-left: 5px;
+    padding-right: 5px;
+    background: transparent;
+    color: #b4b4b4; /* antes da focagem color = var(--cinsa)  after #f11b26 */
+    cursor: vertical-text;
+}
+
+.login-box > .input:focus,.login-box > .input:valid {
+    border: 1.5px solid #F11B62;
+    border-radius: 5px;
+}
+
+.login-box > .input:focus ~ label,.login-box > .input:valid ~ label {
+    position: relative;
+    left: 14px; /* antes da focagem left = 11px after 14px */
+    top: -49px; /* antes da focagem top = -29px after -49px */
+    font-size: 13px; /* antes da focagem font-size = 15px after 13px*/
+    background: var(--white);
+    color: #F11B62; /* antes da focagem color = var(--cinsa)  after #f11b26 */
+}
+
+/* ................... fim styles input .....................*/
+
+.btn-login {
+    outline: none;
+    width: 200px;
+    height: 40px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 50px;
+    background: var(--darck);
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.btn-login:hover {
+    box-shadow: 0px 4px 10px #00000054;
+}
+
+.btn-login-2 {
+    outline: none;
+    width: 200px;
+    height: 40px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 50px;
+    background: var(--darck);
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    box-shadow: 0px 4px 10px #00000054;
+    transform: scale(1);
+}
+
+.btn-login-2:hover {
+    background: #F11B62;
+}
+
+.btn-login-2:focus ,.btn-login:focus {
+    outline: none;
+}
+
+.btn-login-3 {
+    outline: none;
+    width: 200px;
+    height: 40px;
+    margin-top: -40px;
+    border: none;
+    border-radius: 50px;
+    background: var(--darck);
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    box-shadow: 0px 4px 10px #00000054;
+    transform: scale(0);
+}
+
+.btn-login-3:hover {
+    background: #F11B62;
+}
+
+.btn-login-3:focus ,.btn-login:focus {
+    outline: none;
+}

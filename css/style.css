@@ -1,0 +1,87 @@
+:root {
+    --primary-color : rgba(13,110,139,0.45);
+    --overlay-color : rgba(24,39,52,0.85);
+    --dark-color :#1A262B;
+    --light-color :#c3c3c3;
+    --menu-speed : 0.75s;
+}
+
+/* .............. style loading ............. */
+
+.loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #09111F;
+    /* transition: all 1s ease-out; */
+    z-index: 5000;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loading > img {
+    width: 600px;
+    /* transition: all .4s ease-out; */
+    opacity: 1;
+}
+
+/* .............. fim style loading ..........*/
+
+
+.bg-cards > .col-xl-3:nth-child(5n+1) > .card {
+    background: linear-gradient(45deg,#1AE5D9,#5A7EE9);
+}
+
+.bg-cards > .col-xl-3:nth-child(5n+2) > .card {
+    background: linear-gradient(45deg,#F5509F,#FE7474);
+}
+
+.bg-cards > .col-xl-3:nth-child(5n+3) > .card {
+    background: linear-gradient(45deg,#41E494,#39B2B5);
+}
+
+.bg-cards > .col-xl-3:nth-child(5n+4) > .card {
+    background: linear-gradient(45deg,#FFDC40,#FF8456);
+}
+
+.card-chart-1 {
+    border-radius: 5px !important;
+}
+
+.card-chart-1 > .card-header {
+    background: #fff !important;
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 0 !important;
+}
+
+.card-chart-2 > .card-header {
+    background: #fff !important;
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 0 !important;
+}
+
+.bar-orisontal {
+    cursor: pointer;
+}
+
+
+.footerd {
+    background: #c3c3c3;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerd > h6 {
+    position: relative;
+    top: 5px;
+}

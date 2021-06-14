@@ -1,0 +1,117 @@
+:root {
+    --bg-gradient: linear-gradient(55deg,#F11B62,#FE6802);
+    --white: #fff;
+    --shadow-box: 4px 5px 10px rgba(0, 0, 0, 0.397);
+    --darck : #a10036;
+    --cinsa : #ddd;
+}
+
+.input-box {
+    /* background: saddlebrown; */
+    width: 100%;
+    height: 35px;
+    /* overflow: hidden; */
+}
+
+.input-box > .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #b4b4b4;
+    outline: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all .4s ease-in-out;
+}
+
+.input-box > label {
+    transition: all .4s ease-in-out;
+    position: relative;
+    left: 11px; /* antes da focagem left = 11px after 14px */
+    top: -29px; /* antes da focagem top = -29px after -49px */
+    font-size: 15px; /* antes da focagem font-size = 15px after 13px*/
+    padding-left: 5px;
+    padding-right: 5px;
+    background: transparent;
+    color: #b4b4b4; /* antes da focagem color = var(--cinsa)  after #f11b26 */
+    cursor: text;
+}
+
+.input-box > .input:focus,.input-box > .input:valid {
+    border: 1px solid #F11B62;
+    border-radius: 5px;
+}
+
+.input-box > .input:focus ~ label,.input-box > .input:valid ~ label {
+    position: relative;
+    left: 14px; /* antes da focagem left = 11px after 14px */
+    top: -49px; /* antes da focagem top = -29px after -49px */
+    font-size: 13px; /* antes da focagem font-size = 15px after 13px*/
+    background: var(--white);
+    color: #F11B62; /* antes da focagem color = var(--cinsa)  after #f11b26 */
+}
+
+.input-box > .input-area {
+    position: relative;
+    top: -25px;
+    width: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #b4b4b4;
+    outline: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all .4s ease-in-out;
+}
+
+.input-box > .input-area:focus , .input-box > .input-area:valid {
+    border: 1px solid #F11B62;
+    border-radius: 5px;
+}
+
+.form-blog {
+    height: auto !important;
+}
+
+/* #img-pub {
+    margin-left: 110px;
+} */
+
+/* .ca-top {
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5px;
+    margin-bottom: 10px !important;
+} */
+
+.btn-p {
+    width: 200px;
+    position: relative;
+    top: 20px;
+    height: 35px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #fff;
+    background: #F11B62;
+    font-size: 15px;
+    box-shadow: var(--shadow-box);
+    transition: all .4s ease-in-out;
+    outline: none;
+}
+
+.btn-p:hover {
+    background: rgb(200, 22, 81);
+}
+
+.sidebar > .sidebar-content > .sidebar-body > .navbar-nav > .nav-item:nth-child(7n+1) {
+    background: none !important;
+}

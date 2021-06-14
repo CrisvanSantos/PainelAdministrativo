@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASBOARD | CSDesigner 2020</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lib-CSdesigner/bootstrap 4/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib-CSdesigner/mdb/css/mdb.css">
+    <link rel="stylesheet" href="../lib-CSdesigner/font-awesome 4/css/font-awesome.css">
+    <link rel="stylesheet" href="../lib-CSdesigner/jquery-map/css/jqvmap.css">
+    <link rel="stylesheet" href="../lib-CSdesigner/calendario/calendario.css">
+</head>
+<body onload="loading()">
+    <!-- <div class="loading">
+        <img src="../img/good-1.gif" alt="loading-img">
+    </div> -->
+
+<!--
+    CS-DESIGNER  --  FRONT-END DEVELOPER
+-->
+
+    <div class="grid">
+        <input type="checkbox" name="" id="click" class="click">
+        <div class="sidebar">
+            <div class="sidebar-content sticky-top">
+                <div class="sidebar-top">
+                    <div class="img-box">
+                        <img src="../icons/CS_designer icons/CS_designer 80x80.png" style="width: inherit;" alt="">
+                    </div>
+                    <h3 class="text-white">CS<span>designer</span></h3>
+                </div>
+                <div class="sidebar-body">
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item select">
+                            <a class="nav-link text-white d-flex align-items-center" href="home.html
+                            "><i class="fa fa-dashboard fa-lg mr-2 icone" aria-hidden="true"></i><span class="tnav">Dashboard</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white d-flex align-items-center" href="publicar.html"><i class="fa fa-edit fa-lg mr-2 icone" aria-hidden="true"></i> <span class="tnav">Publicar</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white d-flex align-items-center" href="produtos.html"><i class="fa fa-shopping-cart fa-lg mr-2 icone" aria-hidden="true"></i> <span class="tnav">Produtos</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa fa-file-text-o fa-lg mr-2 icone" aria-hidden="true"></i> <span class="tnav">Publicações</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa fa-folder-o fa-lg mr-2 icone" aria-hidden="true"></i> <span class="tnav">Páginas</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa fa-wrench fa-lg mr-2 icone" aria-hidden="true"></i> <span class="tnav">Configurações</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-area">
+            <div class="sid-header sticky-top">
+                <div class="container-fluid d-flex justify-content-between">
+                    <div class="lefter d-flex">
+                        <label for="click">
+                            <i class="fa fa-bars fa-lg text-white ml-4 mr-4" aria-hidden="true"></i>
+                         </label>
+                         <form action="#" method="post" class="form-top">
+                             <input type="search" name="" placeholder="Pesquisar" id="search" class="search">
+                         </form>
+                    </div>
+                    <!--notificação e sms-->
+                    <div class="box-icons d-flex align-items-center">
+                        <i class="fa fa-envelope-o fa-lg text-white mr-3 btn-sms" aria-hidden="true"></i>
+                        <i class="fa fa-bell-o fa-lg text-white mr-4 pointer btn-not" aria-hidden="true"></i>
+                        <div class="img-circles"></div>
+                    </div>
+                </div>
+            </div>
+            <!--modais de mensagens-->
+            <div class="sms-modal">
+                <header class="sms-header">
+                    <h6 class="text-dark">Mensagens recebidas</h6>
+                    <h1 class="sms-close">&times;</h1>
+                </header>
+                <div class="sms-body">
+                    <div data-spy="scroll" data-target="#" class="m-0 p-0" id="scroll-spy">
+                        <div class="row p-0 m-0" id="accordion">
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="sms-flex-content">
+                                            <div class="img">
+                                                <img src="../img/1.png" alt="">
+                                            </div>
+                                            <div class="sms-card-text mb-0">
+                                                <h6>Cristovão dos Santos</h6>
+                                                <div class="sms-time">
+                                                    <small class="mb-0 sms-text" data-toggle="collapse" data-target="#smscollapse1">Ver mensagem <i class="fa fa-plus-circle" aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">2 min</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="smscollapse1" data-parent="#accordion">
+                                            <div class="sms-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio quaerat necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer" aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="sms-flex-content">
+                                            <div class="img">
+                                                <img src="../img/2.png" alt="">
+                                            </div>
+                                            <div class="sms-card-text mb-0">
+                                                <h6>Kátia Van-dúnem</h6>
+                                                <div class="sms-time">
+                                                    <small class="mb-0 sms-text" data-toggle="collapse" data-target="#smscollapse2">Ver mensagem <i
+                                                            class="fa fa-plus-circle" aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">6 min</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="smscollapse2" data-parent="#accordion">
+                                            <div class="sms-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio quaerat
+                                                    necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer" aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="sms-flex-content">
+                                            <div class="img">
+                                                <img src="../img/3.png" alt="">
+                                            </div>
+                                            <div class="sms-card-text mb-0">
+                                                <h6>Beraldinel de Sá</h6>
+                                                <div class="sms-time">
+                                                    <small class="mb-0 sms-text" data-toggle="collapse" data-target="#smscollapse3">Ver mensagem <i
+                                                            class="fa fa-plus-circle" aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">2 horas</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="smscollapse3" data-parent="#accordion">
+                                            <div class="sms-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio quaerat
+                                                    necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer" aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="sms-flex-content">
+                                            <div class="img">
+                                                <img src="../img/4.png" alt="">
+                                            </div>
+                                            <div class="sms-card-text mb-0">
+                                                <h6>Frederico Domingos</h6>
+                                                <div class="sms-time">
+                                                    <small class="mb-0 sms-text" data-toggle="collapse" data-target="#smscollapse4">Ver mensagem <i
+                                                            class="fa fa-plus-circle" aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">2 horas</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="smscollapse4" data-parent="#accordion">
+                                            <div class="sms-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio quaerat
+                                                    necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer" aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+                            
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="sms-flex-content">
+                                            <div class="img">
+                                                <img src="../img/5.png" alt="">
+                                            </div>
+                                            <div class="sms-card-text mb-0">
+                                                <h6>Garcia Pedro</h6>
+                                                <div class="sms-time">
+                                                    <small class="mb-0 sms-text" data-toggle="collapse" data-target="#smscollapse5">Ver mensagem <i
+                                                            class="fa fa-plus-circle" aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">8 horas</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="smscollapse5" data-parent="#accordion">
+                                            <div class="sms-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio quaerat
+                                                    necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer" aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+                            
+                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sms-footer pointer">
+                    <h6 class="text-muted mt-2">Ver mensagens</h6>
+                </div>
+            </div>
+            <!--modais de mensagens-->
+            <div class="not-modal">
+                <header class="not-header">
+                    <h6 class="text-dark">Notificações recebidas</h6>
+                    <h1 class="not-close">&times;</h1>
+                </header>
+                <div class="not-body">
+                    <div data-spy="scroll" data-target="#" class="m-0 p-0" id="scroll-spy">
+                        <div class="row p-0 m-0" id="accordion">
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="not-flex-content">
+                                            <div class="img">
+                                                <img src="../img/1.png" alt="">
+                                            </div>
+                                            <div class="not-card-text mb-0">
+                                                <h6>Cristovão dos Santos</h6>
+                                                <div class="not-time">
+                                                    <small class="mb-0 sms-text" data-toggle="collapse"
+                                                        data-target="#notcollapse1">Ver mensagem <i class="fa fa-plus-circle"
+                                                            aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">2 min</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="notcollapse1" data-parent="#accordion">
+                                            <div class="not-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio
+                                                    quaerat necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="not-flex-content">
+                                            <div class="img">
+                                                <img src="../img/2.png" alt="">
+                                            </div>
+                                            <div class="not-card-text mb-0">
+                                                <h6>Kátia Van-dúnem</h6>
+                                                <div class="not-time">
+                                                    <small class="mb-0 sms-text" data-toggle="collapse"
+                                                        data-target="#notcollapse2">Ver mensagem <i class="fa fa-plus-circle"
+                                                            aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">6 min</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="notcollapse2" data-parent="#accordion">
+                                            <div class="not-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio
+                                                    quaerat
+                                                    necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="not-flex-content">
+                                            <div class="img">
+                                                <img src="../img/3.png" alt="">
+                                            </div>
+                                            <div class="not-card-text mb-0">
+                                                <h6>Beraldinel de Sá</h6>
+                                                <div class="not-time">
+                                                    <small class="mb-0 not-text" data-toggle="collapse"
+                                                        data-target="#notcollapse3">Ver mensagem <i class="fa fa-plus-circle"
+                                                            aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">2 horas</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="notcollapse3" data-parent="#accordion">
+                                            <div class="not-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio
+                                                    quaerat
+                                                    necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+            
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="not-flex-content">
+                                            <div class="img">
+                                                <img src="../img/4.png" alt="">
+                                            </div>
+                                            <div class="not-card-text mb-0">
+                                                <h6>Frederico Domingos</h6>
+                                                <div class="not-time">
+                                                    <small class="mb-0 sms-text" data-toggle="collapse"
+                                                        data-target="#notcollapse4">Ver mensagem <i class="fa fa-plus-circle"
+                                                            aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">2 horas</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="notcollapse4" data-parent="#accordion">
+                                            <div class="not-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio
+                                                    quaerat
+                                                    necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+            
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mt-2 px-0">
+                                    <div class="card-body px-1 pl-2 py-3">
+                                        <div class="not-flex-content">
+                                            <div class="img">
+                                                <img src="../img/5.png" alt="">
+                                            </div>
+                                            <div class="not-card-text mb-0">
+                                                <h6>Garcia Pedro</h6>
+                                                <div class="not-time">
+                                                    <small class="mb-0 not-text" data-toggle="collapse"
+                                                        data-target="#notcollapse5">Ver mensagem <i class="fa fa-plus-circle"
+                                                            aria-hidden="true"></i></small>
+                                                    <small class="ml-auto mt-0 text-muted">8 horas</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="notcollapse5" data-parent="#accordion">
+                                            <div class="not-text-body">
+                                                <p class="text-muted mt-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero autem odio
+                                                    quaerat
+                                                    necessitatibus.
+                                                </p>
+                                                <h6 class="d-flex mb-0">
+                                                    <i class="fa fa-thumbs-up text-info mr-2 ml-auto pointer"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-heart text-danger pointer" aria-hidden="true"></i>
+                                                </h6>
+                                            </div>
+                                        </div>
+            
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="not-footer pointer">
+                    <h6 class="text-muted mt-2">Ver mensagens</h6>
+                </div>
+            </div>
+            <div class="container-fluid pt-4 px-4">
+                 <!-- conteudo -->
+            <div class="row bg-cards">
+                <div class="col-xl-3">
+                    <div class="card py-3 text-white">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="text-left">
+                                <h4 class="card-title">2050</h4>
+                                <p class="card-text text-white">Total Orders</p>
+                            </div>
+                            <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card py-3 text-white">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="text-left">
+                                <h4 class="card-title">3250</h4>
+                                <p class="card-text text-white">Total Expenses</p>
+                            </div>
+                            <i class="fa fa-credit-card fa-3x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card py-3 text-white">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="text-left">
+                                <h4 class="card-title">87.5%</h4>
+                                <p class="card-text text-white">Total Revenue</p>
+                            </div>
+                            <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card py-3 text-white">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="text-left">
+                                <h4 class="card-title">2550</h4>
+                                <p class="card-text text-white">News Users</p>
+                            </div>
+                            <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-xl-7">
+                    <div class="card card-chart-1">
+                        <div class="card-header d-flex justify-content-between">
+                            <h5 class="text-muted">Product Sales</h5>
+                            <div class="bar-orisontal">
+                                <img src="../icons/menu_vertical_24px.png" width="inherit" alt="menu_vertical">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="myAreaChart" width="100%" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-5">
+                    <div class="card card-chart-2">
+                        <div class="card-body">
+                            <div data-role="calendar" data-buttons="false" data-wide-point="lg" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-xl-12">
+                    <div class="card card-chart-1">
+                        <div class="card-header d-flex justify-content-between">
+                            <h5 class="text-muted">World Map</h5>
+                            <div class="bar-orisontal">
+                                <img src="../icons/menu_vertical_24px.png" width="inherit" alt="menu_vertical">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="world-vmap" style="width: 100%; height: 400px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fim do conteudo -->
+            <!-- modal -->
+            <div class="mymodal">
+                <div class="formLogin">
+                    <div class="boxsForm">
+                        <div class="img-circleForm"></div>
+                    </div>
+                    <div class="boxsForm">
+                        <form action="../php_funcoes/logut.php" method="post" class="my-form">
+                            <h4>To Leave</h4>
+                            <input type="text" name="nome_out" placeholder="Nome" id="email" class="input-form ip1" required>
+                            <input type="password" name="senha_out" placeholder="Password" id="password" class="input-form ip2" required>
+                            <button type="submit" class="btnForm">SAIR</button>
+                            <h6 class="text-for-1"><spanclass="text-muted">forgot</span> Username / Passwprd?</h6>
+        
+                            <h6 class="text-for-2">Create Your Account <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h6>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- fim modal -->
+            </div>
+            <!-- rodape -->
+            <footer class="container-fluid footerd mt-4">
+                <h6>Copyright &copy; 2020 <span>Devcode</span>-criação & inovação</h6>
+                <h6>Verção 1.0.0</h6>
+            </footer>
+        <!-- fimm rodape -->
+        </div>
+    </div>
+
+    <script src="../lib-CSdesigner/jquery/jquery.min.js"></script>
+    <script src="../lib-CSdesigner/bootstrap 4/js/bootstrap.js"></script>
+    <script src="../lib-CSdesigner/mdb/js/mdb.min.js"></script>
+    <script src="../js/styles.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../lib-CSdesigner/charts/Chart.js"></script>
+    <script src="../lib-CSdesigner/charts/chart-area/chart-area-demo.js"></script>
+    <script src="../lib-CSdesigner/charts/chart-bar/chart-bar-demo.js"></script>
+    <script src="../lib-CSdesigner/jquery-map/js/jquery.vmap.js"></script>
+    <script src="../lib-CSdesigner/jquery-map/js/jquery.vmap.sampledata.js"></script>
+    <script src="../lib-CSdesigner/jquery-map/js/jquery.vmap.world.js"></script>
+    <script src="../lib-CSdesigner/jquery-map/js/mapa do mundo.js"></script>
+    <script src="../lib-CSdesigner/calendario/calendario.js"></script>
+</body>
+</html>
